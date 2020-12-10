@@ -3,6 +3,26 @@
 const express = require('express');
 const app = express();
 
+const logger = require('./middleware/logger');
+const lostHandler = require('./error-handlers/404');
+const errorHandler = require('./error-handlers/500');
+
+const dragonRoutes = require('./routes/dragon-routes');
+const elvesRoutes = require('./routes/elves-routes');
+
+
+app.use(express.json());
+app.use(logger);
+app.use(dragonRoutes);
+app.use(elvesRoutes);
+
+app.get('/', (request, response) => {
+  response.status(200).send('WE ARE DRAGONSS');
+});
+
+app.use('*',lostHandler);
+app.use(errorHandler);
+
 module.exports = {
   server: app,
   start: port =>{
