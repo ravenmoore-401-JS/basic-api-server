@@ -1,1 +1,42 @@
-# basic-api-server
+# LAB - Class 03
+
+## basic-api-server 
+
+### Author: Matt Ravenmoore
+
+### Links and Resources
+
+- [ci/cd](https://github.com/ravenmoore-401-JS/basic-api-server/actions) (GitHub Actions)
+- [back-end server url](https://rm-basic-api-server.herokuapp.com/)
+
+- [submit PR](https://github.com/ravenmoore-401-JS/basic-api-server/pull/)
+
+### Setup
+
+clone down the project from github
+run `npm i`
+
+#### `.env` requirements (where applicable)
+
+- `PORT` - Port Number
+
+#### How to initialize/run your application (where applicable)
+
+run `npm start`
+
+#### How to use your library (where applicable)
+
+#### Tests
+
+- How do you run tests?
+to check tests run `npm test`
+
+- Any tests of note?
+a few basic status tests for server.
+
+
+
+#### UML
+
+![UML Diagram](uml-lab03.jpg)
+
